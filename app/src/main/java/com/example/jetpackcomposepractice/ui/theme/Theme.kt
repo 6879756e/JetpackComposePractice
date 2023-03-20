@@ -58,7 +58,7 @@ fun JetpackComposePracticeTheme(
 
     MaterialTheme(
         colorScheme = colors,
-        typography = Typography(),
+        typography = MaterialTheme.typography,
         content = content
     )
 }

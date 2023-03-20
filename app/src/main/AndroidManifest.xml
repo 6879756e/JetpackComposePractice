@@ -29,7 +29,10 @@
         </activity>
         <activity
             android:name=".codelabs.BasicsActivity"
-            android:exported="false" />
+            android:exported="true" />
+        <activity
+            android:name=".codelabs.BasicLayouts"
+            android:exported="true" />
     </application>
 
 </manifest>
