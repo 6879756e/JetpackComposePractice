@@ -33,6 +33,9 @@
         <activity
             android:name=".codelabs.BasicLayouts"
             android:exported="true" />
+        <activity
+            android:name=".codelabs.BasicState"
+            android:exported="true" />
     </application>
 
 </manifest>
