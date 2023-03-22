@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "JetpackComposePractice"
-include ':app'
+include ':app', ':MigrationCodelab:app'
