@@ -36,6 +36,9 @@
         <activity
             android:name=".codelabs.BasicState"
             android:exported="true" />
+        <activity
+            android:name=".codelabs.ThemeActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

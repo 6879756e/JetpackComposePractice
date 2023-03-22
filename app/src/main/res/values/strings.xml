@@ -19,4 +19,11 @@
     <string name="bottom_navigation_home">HOME</string>
     <string name="bottom_navigation_profile">PROFILE</string>
     <string name="placeholder_search">Search</string>
+
+
+    <!--  Codelab Theming  -->
+    <string name="app_title">Jetnews</string>
+    <string name="top">Top Story</string>
+    <string name="popular">Popular</string>
+    <string name="read_time">%1$d min read</string>
 </resources>

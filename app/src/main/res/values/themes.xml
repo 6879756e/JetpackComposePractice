@@ -4,4 +4,11 @@
     <style name="Theme.JetpackComposePractice" parent="android:Theme.Material.Light.NoActionBar">
         <item name="android:statusBarColor">@color/purple_700</item>
     </style>
+
+    <!-- Codelab Theming -->
+    <style name="Theme.ComposeTheming" parent="Theme.Material.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/status_bar</item>
+    </style>
+
+    <style name="Theme.Material.DayNight.NoActionBar" parent="@android:style/Theme.Material.Light.NoActionBar" />
 </resources>
