@@ -4,7 +4,6 @@ import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Typography
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
@@ -59,6 +58,38 @@ fun JetpackComposePracticeTheme(
     MaterialTheme(
         colorScheme = colors,
         typography = MaterialTheme.typography,
+        content = content
+    )
+}
+
+private val JetNewsDarkColors = darkColors(
+    primary = Red300,
+    primaryVariant = Red700,
+    onPrimary = Color.Black,
+    secondary = Red300,
+    onSecondary = Color.Black,
+    error = Red200
+)
+
+private val JetNewsLightColors = lightColors(
+    primary = Red700,
+    primaryVariant = Red900,
+    onPrimary = Color.White,
+    secondary = Red700,
+    secondaryVariant = Red900,
+    onSecondary = Color.White,
+    error = Red800
+)
+
+@Composable
+fun JetnewsTheme(
+    darkTheme: Boolean = isSystemInDarkTheme(),
+    content: @Composable () -> Unit = {}
+) {
+    androidx.compose.material.MaterialTheme(
+        colors = if (darkTheme) JetNewsDarkColors else JetNewsLightColors,
+        typography = JetnewsTypography,
+        shapes = JetnewsShapes,
         content = content
     )
 }
