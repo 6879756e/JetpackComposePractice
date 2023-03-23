@@ -39,6 +39,9 @@
         <activity
             android:name=".codelabs.ThemeActivity"
             android:exported="true" />
+        <activity
+            android:name=".codelabs.AnimationActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
