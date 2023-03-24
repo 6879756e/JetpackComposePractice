@@ -21,7 +21,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
-import androidx.compose.runtime.Composable
+import androidx.compose.runtime.*
 import androidx.compose.samples.crane.details.launchDetailsActivity
 import androidx.compose.samples.crane.ui.CraneTheme
 import androidx.core.view.WindowCompat
@@ -37,12 +37,20 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             CraneTheme {
-                MainScreen(onExploreItemClicked = {
-                    launchDetailsActivity(
-                        context = this,
-                        item = it
-                    )
-                })
+                var shouldShowSplash by remember { mutableStateOf(true) }
+
+                if (shouldShowSplash) {
+                    LandingScreen({
+                        shouldShowSplash = false
+                    })
+                } else {
+                    MainScreen(onExploreItemClicked = {
+                        launchDetailsActivity(
+                            context = this,
+                            item = it
+                        )
+                    })
+                }
             }
         }
     }
